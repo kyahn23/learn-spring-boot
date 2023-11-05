@@ -1,9 +1,20 @@
 package com.springbootstudy.learnspringboot.course;
 
-public class Course {
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
+@Entity
+public class Course {
+	
+
+	@Id
 	private long id;
+	
+	// name 별도 지정 없으면 컬럼 그대로 인
+//	@Column(name = "name")
 	private String name;
+	
+//	@Column(name = "author")
 	private String author;
 
 	public Course() {
